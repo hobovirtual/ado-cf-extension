@@ -1,0 +1,82 @@
+{
+    "manifestVersion": 1,
+    "id": "ado-cf-extension",
+    "name": "Azure DevOps Cloud Foundry extension",
+    "version": "0.0.1",
+    "publisher": "",
+    "description": "Azure DevOps extension to push applications to a Cloud Foundry foundation. Forked from archived repo https://github.com/microsoft/vsts-cloudfoundry.git",
+    "public": false,
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "deploy",
+        "cloud foundry"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/hobovirtual/ado-cf-extension.git"
+        },
+        "support": {
+            "uri": "https://github.com/hobovirtual/ado-cf-extension.git/issues"
+        }
+    },
+    "targets":[
+        { "id":"Microsoft.VisualStudio.Services" }
+    ],
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "files": [
+        {
+            "path": "CloudFoundry"
+        },
+        {
+            "path": "CloudFoundryCLI"
+        },
+        {
+            "path":"CloudFoundryCLIInstall"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "cloud-foundry-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CloudFoundry"
+            }
+        },
+        {
+            "id": "cloud-foundry-cli-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CloudFoundryCLI"
+            }
+        },
+        {
+            "id": "cloud-foundry-cli-install-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CloudFoundryCLIInstall"
+            }
+        }
+    ]
+}

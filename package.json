@@ -1,0 +1,49 @@
+{
+  "name": "vsts.cloudfoundry",
+  "version": "1.164.0",
+  "description": "Visual Studio Team Services extension for Cloud Foundry",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vsts-cloudfoundry"
+  },
+  "keywords": [
+    "VSO",
+    "build",
+    "tasks"
+  ],
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Microsoft/vsts-cloudfoundry/issues"
+  },
+  "homepage": "https://github.com/Microsoft/vsts-cloudfoundry",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-typescript": "^5.0.0",
+    "gulp-util": "^3.0.4",
+    "gulp-zip": "^3.0.2",
+    "minimist": "^1.1.1",
+    "mocha": "^5.2.0",
+    "semver": "^4.3.3",
+    "shelljs": "^0.3.0",
+    "tfx-cli": "^0.6.4",
+    "through2": "^0.6.3",
+    "typescript": "^2.4.1",
+    "validator": "^3.33.0",
+    "azure-pipelines-task-lib": "^2.8.0",
+    "azure-pipelines-tool-lib": "^0.11.0"
+  },
+  "dependencies": {
+    "@types/node": "^6.0.101",
+    "q": "^1.2.0"
+  }
+}
